@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naufal Handi Pramudya | Business Research &amp; Survey Localization Specialist</title>
+  <meta name="description" content="Freelance Translator | English to Bahasa Indonesia | Business Research, Market Research &amp; Survey Localization Specialist. Available for remote projects worldwide.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Naufal Handi Pramudya | Survey Localization Specialist">
+  <meta property="og:description" content="Business research and strategic survey localization for consulting, private equity, and investment research teams.">
+  <meta property="og:locale" content="en_US" id="ogLocale">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Naufal Handi Pramudya | Survey Localization Specialist">
+  <meta name="twitter:description" content="Business research and strategic survey localization for consulting, private equity, and investment research teams.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script>
+    (function () {
+      if (!localStorage.getItem("portfolio_theme")) {
+        document.documentElement.setAttribute("data-theme", "light");
+      } else {
+        document.documentElement.setAttribute("data-theme", localStorage.getItem("portfolio_theme"));
+      }
+      if (!localStorage.getItem("portfolio_lang")) {
+        document.documentElement.setAttribute("lang", "en");
+      } else {
+        document.documentElement.setAttribute("lang", localStorage.getItem("portfolio_lang") === "id" ? "id" : "en");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skipLink" href="#main">Skip to content</a>
+
+  <header class="siteHeader" id="siteHeader">
+    <div class="siteHeaderInner">
+      <a class="siteBrand" href="#hero" data-nav="hero">Indonesian Localization</a>
+      <nav class="siteNav" id="siteNav" aria-label="Primary">
+        <ul class="siteNavList" id="siteNavList"></ul>
+      </nav>
+      <div class="siteControls">
+        <div class="langToggle" role="group" aria-label="Language">
+          <button type="button" class="langBtn isActive" id="langEn" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="langBtn" id="langId" data-lang="id" aria-pressed="false">ID</button>
+        </div>
+        <button type="button" class="themeBtn" id="themeBtn" aria-label="Switch to dark mode">
+          <span class="themeIcon themeIconSun" aria-hidden="true">☀</span>
+          <span class="themeIcon themeIconMoon" aria-hidden="true">☽</span>
+        </button>
+        <button type="button" class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="siteNav">
+          <span class="menuBtnLabel" id="menuBtnLabel">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="contactBar" id="contactBar" hidden>
+    <div class="contactBarInner">
+      <a class="contactBarLink" id="contactBarEmail" href="mailto:naufal.handipramudya@gmail.com">naufal.handipramudya@gmail.com</a>
+      <a class="contactBarLink" id="contactBarLinkedin" href="https://www.linkedin.com/in/naufal-handi-pramudya-697548229/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <div id="app"></div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
